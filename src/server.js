@@ -2,6 +2,7 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import multer  from 'multer'; 
 import morgan from 'morgan';
 import helmet from 'helmet';
 import  { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -9,6 +10,11 @@ import  { dirname, join } from 'path';
 import  { fileURLToPath } from 'url';
 import  { randomUUID }   from 'crypto';
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const upload = multer({
+  dest: join(__dirname, 'uploads')  
+});
+
 const DB_PATH   = join(__dirname, 'data', 'db.json');
 
 //import connectDB from './config/db.js';
@@ -35,8 +41,6 @@ function loadDB() {
 function saveDB(db) { 
     writeFileSync(DB_PATH, JSON.stringify(db, null, 2)); 
 }
-
-const upload = multer({ dest: join(__dirname, 'uploads') });
 
 function auth(req, res, next) {
   const token = req.headers.authorization?.split(' ')[1];
