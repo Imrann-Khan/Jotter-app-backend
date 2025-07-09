@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "_id": "u1",
+      "username": "alice",
+      "email": "alice@example.com",
+      "passwordHash": "$2b$12$8ZaU4Cq5.XO8Yx4pbsZQ7ONCwzJo7lyjrsTcVEf8u8ebUuXt/9al6", 
+      "pin": "1234",
+      "createdAt": "2025-07-01T09:00:00Z",
+      "updatedAt": "2025-07-01T09:00:00Z"
+    },
+    {
+      "_id": "u2",
+      "username": "bob",
+      "email": "bob@example.com",
+      "passwordHash": "$2b$12$8ZaU4Cq5.XO8Yx4pbsZQ7ONCwzJo7lyjrsTcVEf8u8ebUuXt/9al6",
+      "pin": null,
+      "createdAt": "2025-07-02T10:00:00Z",
+      "updatedAt": "2025-07-02T10:00:00Z"
+    }
+  ],
+  "folders": [
+    { "_id": "froot", "name": "Root",     "userId": "u1", "parentId": null, "isHidden": false, "isFavorite": false },
+    { "_id": "fimg",  "name": "Images",   "userId": "u1", "parentId": "froot", "isHidden": false, "isFavorite": false },
+    { "_id": "fdoc",  "name": "Docs",     "userId": "u1", "parentId": "froot", "isHidden": false, "isFavorite": false },
+    { "_id": "fwork", "name": "Work",     "userId": "u2", "parentId": null,  "isHidden": false, "isFavorite": true  }
+  ],
+  "files": [
+    
+    { "_id":"img01","name":"pic01.jpg","type":"image","size":204800,"mimetype":"image/jpeg","uploadDate":"2025-07-01T08:00:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic01.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img02","name":"pic02.jpg","type":"image","size":204900,"mimetype":"image/jpeg","uploadDate":"2025-07-01T12:30:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic02.jpg","isHidden":false,"isFavorite":true  },
+    { "_id":"img03","name":"pic03.jpg","type":"image","size":205000,"mimetype":"image/jpeg","uploadDate":"2025-07-02T09:15:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic03.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img04","name":"pic04.jpg","type":"image","size":205100,"mimetype":"image/jpeg","uploadDate":"2025-07-03T06:40:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic04.jpg","isHidden":true,"isFavorite":false },
+    { "_id":"img05","name":"pic05.jpg","type":"image","size":205200,"mimetype":"image/jpeg","uploadDate":"2025-07-03T20:10:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic05.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img06","name":"pic06.jpg","type":"image","size":205300,"mimetype":"image/jpeg","uploadDate":"2025-07-04T10:45:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic06.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img07","name":"pic07.jpg","type":"image","size":205400,"mimetype":"image/jpeg","uploadDate":"2025-07-05T15:20:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic07.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img08","name":"pic08.jpg","type":"image","size":205500,"mimetype":"image/jpeg","uploadDate":"2025-07-06T11:11:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic08.jpg","isHidden":false,"isFavorite":true },
+    { "_id":"img09","name":"pic09.jpg","type":"image","size":205600,"mimetype":"image/jpeg","uploadDate":"2025-07-07T09:09:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic09.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img10","name":"pic10.jpg","type":"image","size":205700,"mimetype":"image/jpeg","uploadDate":"2025-07-08T17:30:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic10.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img11","name":"pic11.jpg","type":"image","size":205800,"mimetype":"image/jpeg","uploadDate":"2025-07-09T13:13:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic11.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img12","name":"pic12.jpg","type":"image","size":205900,"mimetype":"image/jpeg","uploadDate":"2025-07-10T08:08:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic12.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img13","name":"pic13.jpg","type":"image","size":206000,"mimetype":"image/jpeg","uploadDate":"2025-07-11T19:45:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic13.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img14","name":"pic14.jpg","type":"image","size":206100,"mimetype":"image/jpeg","uploadDate":"2025-07-12T14:14:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic14.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img15","name":"pic15.jpg","type":"image","size":206200,"mimetype":"image/jpeg","uploadDate":"2025-07-13T07:07:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic15.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img16","name":"pic16.jpg","type":"image","size":206300,"mimetype":"image/jpeg","uploadDate":"2025-07-14T23:50:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic16.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img17","name":"pic17.jpg","type":"image","size":206400,"mimetype":"image/jpeg","uploadDate":"2025-07-15T12:12:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic17.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img18","name":"pic18.jpg","type":"image","size":206500,"mimetype":"image/jpeg","uploadDate":"2025-07-16T10:10:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic18.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img19","name":"pic19.jpg","type":"image","size":206600,"mimetype":"image/jpeg","uploadDate":"2025-07-17T05:05:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic19.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"img20","name":"pic20.jpg","type":"image","size":206700,"mimetype":"image/jpeg","uploadDate":"2025-07-18T18:18:00Z","userId":"u1","folderId":"fimg","path":"/uploads/pic20.jpg","isHidden":false,"isFavorite":false },
+
+   
+    { "_id":"pdf01","name":"file01.pdf","type":"pdf","size":512000,"mimetype":"application/pdf","uploadDate":"2025-07-05T11:00:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file01.pdf","isHidden":false,"isFavorite":true },
+    { "_id":"pdf02","name":"file02.pdf","type":"pdf","size":514000,"mimetype":"application/pdf","uploadDate":"2025-07-06T16:20:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file02.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf03","name":"file03.pdf","type":"pdf","size":516000,"mimetype":"application/pdf","uploadDate":"2025-07-07T09:40:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file03.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf04","name":"file04.pdf","type":"pdf","size":518000,"mimetype":"application/pdf","uploadDate":"2025-07-08T14:00:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file04.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf05","name":"file05.pdf","type":"pdf","size":520000,"mimetype":"application/pdf","uploadDate":"2025-07-09T08:30:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file05.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf06","name":"file06.pdf","type":"pdf","size":522000,"mimetype":"application/pdf","uploadDate":"2025-07-10T19:10:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file06.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf07","name":"file07.pdf","type":"pdf","size":524000,"mimetype":"application/pdf","uploadDate":"2025-07-11T12:50:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file07.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf08","name":"file08.pdf","type":"pdf","size":526000,"mimetype":"application/pdf","uploadDate":"2025-07-12T06:10:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file08.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf09","name":"file09.pdf","type":"pdf","size":528000,"mimetype":"application/pdf","uploadDate":"2025-07-13T15:25:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file09.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"pdf10","name":"file10.pdf","type":"pdf","size":530000,"mimetype":"application/pdf","uploadDate":"2025-07-14T20:55:00Z","userId":"u1","folderId":"fdoc","path":"/uploads/file10.pdf","isHidden":false,"isFavorite":false },
+
+   
+    { "_id":"bimg1","name":"bob1.jpg","type":"image","size":300000,"mimetype":"image/jpeg","uploadDate":"2025-07-03T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob1.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"bimg2","name":"bob2.jpg","type":"image","size":300100,"mimetype":"image/jpeg","uploadDate":"2025-07-04T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob2.jpg","isHidden":false,"isFavorite":true  },
+    { "_id":"bpdf1","name":"bob.pdf","type":"pdf","size":600000,"mimetype":"application/pdf","uploadDate":"2025-07-05T10:00:00Z","userId":"u2","folderId":"fwork","path":"/uploads/bob.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"bnote1","name":"notes.txt","type":"note","size":1500,"mimetype":"text/plain","uploadDate":"2025-07-05T11:00:00Z","userId":"u2","folderId":"fwork","path":"/uploads/notes.txt","isHidden":false,"isFavorite":false },
+    { "_id":"bnote2","name":"secret.txt","type":"note","size":450,"mimetype":"text/plain","uploadDate":"2025-07-06T11:00:00Z","userId":"u2","folderId":"fwork","path":"/uploads/secret.txt","isHidden":true,"isFavorite":false },
+    { "_id":"bimg3","name":"bob3.jpg","type":"image","size":300200,"mimetype":"image/jpeg","uploadDate":"2025-07-07T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob3.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"bimg4","name":"bob4.jpg","type":"image","size":300300,"mimetype":"image/jpeg","uploadDate":"2025-07-08T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob4.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"bimg5","name":"bob5.jpg","type":"image","size":300400,"mimetype":"image/jpeg","uploadDate":"2025-07-09T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob5.jpg","isHidden":false,"isFavorite":false },
+    { "_id":"bpdf2","name":"bob2.pdf","type":"pdf","size":650000,"mimetype":"application/pdf","uploadDate":"2025-07-10T10:00:00Z","userId":"u2","folderId":"fwork","path":"/uploads/bob2.pdf","isHidden":false,"isFavorite":false },
+    { "_id":"bimg6","name":"bob6.jpg","type":"image","size":300500,"mimetype":"image/jpeg","uploadDate":"2025-07-11T10:00:00Z","userId":"u2","folderId":null,"path":"/uploads/bob6.jpg","isHidden":false,"isFavorite":false }
+  ]
+}
