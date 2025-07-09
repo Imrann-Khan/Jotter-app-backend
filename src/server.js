@@ -18,11 +18,11 @@ const upload = multer({
 
 const DB_PATH   = join(__dirname, 'data', 'db.json');
 
-//import connectDB from './config/db.js';
+import connectDB from './config/db.js';
 
 
 const app = express();
-//connectDB();
+connectDB();
 
 
 app.use(cors());
@@ -30,7 +30,7 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());
 
-//app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 
 
