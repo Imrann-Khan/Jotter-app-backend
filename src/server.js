@@ -10,6 +10,7 @@ import  { dirname, join } from 'path';
 import  { fileURLToPath } from 'url';
 import  { randomUUID }   from 'crypto';
 const __dirname = dirname(fileURLToPath(import.meta.url));
+port = process.env.PORT || 8000;
 
 const upload = multer({
   dest: join(__dirname, 'uploads')  
